@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(134deg, #fcc6c6, 45%, gray);
+}
+
+/* ICON MENU */
+/*nav .menu-icon {
+  margin-top: 15px;
+  margin-left: 15px;
+  display: none;
+  cursor: pointer;
+}*/
+
+.form-box {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.form-box img {
+  width: 60%;
+}
+
+.form-box .form-box-img {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box .form-box-text {
+  width: 50%;
+  margin: 10px 40px;
+}
+
+.form-box .form-input {
+  margin: 20px 0;
+}
+
+form h2 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 2px solid #729929;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 0 8px;
+  height: 40px;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 18px;
+  background-color: #f1f1f1;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.form-input input:focus {
+  border-color: #306fb9;
+}
+
+.form-input textarea {
+  width: 100%;
+  height: 180px;
+  border: 1px solid transparent;
+  background-color: rgb(241, 241, 241);
+  padding: 13px;
+  outline: none;
+  font-size: 18px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.form-input textarea:focus {
+  border-color: #306fb9;
+}
+
+.form-input input[type="submit"] {
+  border: none;
+  background-color: #3d3d3d;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.form-input input[type="submit"]:hover {
+  background-color: #0d202b;
+}
+
+.button-back a {
+  padding: 10px 10px;
+  background-color: #3d3d3d;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.button-back a:hover {
+  background-color: #0d202b;
+}
+
+/* REPONSIVE */
+@media (max-width: 800px) {
+  nav .menu-icon {
+    display: block;
+  }
+
+  .form-box .form-box-img {
+    display: none;
+  }
+
+  .form-box .form-box-text {
+    width: 100%;
+  }
+
+  .button-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .button-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

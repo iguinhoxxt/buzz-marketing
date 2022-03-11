@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(134deg, #fcc6c6, 45%, gray);
+}
+
+.service {
+  padding: 100px 0;
+}
+
+.service-box {
+  max-width: 1300px;
+  padding: 0 45px;
+  margin: auto;
+}
+
+.service-box h1 {
+  text-align: center;
+  position: relative;
+  font-size: 40px;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.service-box h1::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 3px;
+  background: rgb(102, 35, 35);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 50px 25px;
+  width: calc(26% - 20px);
+  border-radius: 6px;
+  border: 1px solid black;
+  background: rgb(68, 61, 61);
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  color: #c5c5c5;
+}
+
+.card:hover {
+  background-color: #553131;
+  transition: all 0.4s ease;
+}
+
+.card:hover .box {
+  transform: scale(1.05);
+}
+
+.card:hover .box {
+  color: #fff;
+}
+
+.box {
+  transition: all 0.3s ease;
+}
+
+.box i {
+  font-size: 40px;
+  color: #0f0f08;
+  transition: all 0.3s ease;
+}
+
+/* ICONS COLORS i*/
+#icon-fa-1 {
+  color: rgb(202, 46, 18);
+}
+
+#icon-fa-2 {
+  color: #1c8d2b;
+}
+
+#icon-fa-3 {
+  color: #1f5ebb;
+}
+
+#icon-fa-4 {
+  color: rgb(12, 124, 100);
+}
+
+.box h3 {
+  font-size: 25px;
+  color: #fff;
+  padding: 10px 0 7px;
+  text-align: center;
+}
+
+.button-back a {
+  background-color: #3d3d3d;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-back a:hover {
+  background-color: #0d202b;
+  transition: 0.3s;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1190px) {
+  .service-box {
+    padding: 0 25px;
+  }
+  .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+
+  .button-back a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .button-back a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
